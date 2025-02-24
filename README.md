@@ -1,135 +1,63 @@
-# 🍽️ InnovNutri-Bite
+# 🍽️ InnovNutri-Bite - AI-Based Nutrition Assistant  
 
-**AI-powered Nutrition Assistant** that provides personalized meal plans and real-time grocery price tracking to help users make budget-friendly and healthy dietary choices.
+InnovNutri-Bite is an AI-powered nutrition assistant designed to help users create personalized meal plans based on their dietary needs and affordability.  
 
-## 🌟 Features
+## 🚀 Features  
 
-✅ **AI Chatbot** – Provides personalized nutrition advice based on user input (age, diet type, weight, height, affordability, etc.).
+### 🔹 **AI Chatbot**  
+- Collects user details (age, country, diet type, height, weight, lifestyle, affordability).  
+- Estimates required protein and nutritional intake.  
+- Stores user preferences and restores previous conversations.  
 
-✅ **Smart Meal Planner** – Generates balanced meal plans considering real-time grocery prices.
+### 🔹 **Personalized Meal Planner (React.js & Streamlit-Based)**  
+- Generates meal plans (breakfast, lunch, dinner) using **React.js and Streamlit**.  
+- React.js is used for the interactive **web-based meal planner UI**.  
+- Streamlit is used for **data analysis and visualization of meal plans**.  
+- Supports users from **India, USA, and Japan**.  
+- Allows users to filter meals based on budget constraints.  
 
-✅ **Google Authentication** – Ensures a personalized experience and saves user data securely.
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React.js, Tailwind CSS
-- **Backend:** Firebase (Firestore, Authentication)
-- **AI Models:** Gemini-based chatbot
-- **APIs & Data:** Custom meal planner API
-- **Additional Tools:** Streamlit (for AI-based meal suggestions)
-
----
-
-## 🔥 About Firebase
-
-Firebase is used for authentication and database management in **InnovNutri-Bite**:
-
-- **Firestore Database**: Stores user preferences, meal plans, and chatbot interactions.
-- **Authentication**: Google Sign-In enables personalized user experiences.
-- **Hosting (Optional)**: Can be used to deploy the web app.
-
-To set up Firebase:
-1. Create a project in [Firebase Console](https://console.firebase.google.com/).
-2. Enable Firestore and Authentication.
-3. Get the Firebase config keys and add them to your `.env` file.
+### 🔹 **Nutritional Guidance**  
+- Provides insights into the causes of poor nutrition.  
+- Suggests meal plans tailored to different dietary needs.  
 
 ---
 
-## 🚀 Installation Guide
-
-### **1️⃣ Clone the Repository**
-```sh
- git clone https://github.com/MSachin11/innovnutri-bite.git
- cd innovnutri-bite
-```
-
-### **2️⃣ Install Dependencies**
-```sh
-npm install
-```
-
-### **3️⃣ Setup Environment Variables**
-Create a `.env` file in the project root and add your API keys:
-```sh
-REACT_APP_GEMINI_API_KEY=your_gemini_api_key
-REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-REACT_APP_GROCERY_API=your_grocery_api_key
-```
-👉 **Note:** Replace `your_api_key` with actual API keys from respective providers.
-
-### **4️⃣ Start the Development Server**
-```sh
-npm start
-```
-Now, open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+## 🛠️ Tech Stack  
+- **Frontend:** React.js, Tailwind CSS  
+- **Backend:** Node.js, Firebase  
+- **AI Model:** Gemini-based chatbot  
+- **Meal Planner:** React.js (UI) + Streamlit (Data Analysis)  
+- **Database:** Firestore (to store user preferences)  
 
 ---
 
-## 🔑 Getting API Keys
-
-| API Service     | Get Your Key Here |
-|----------------|----------------|
-| **Google Firebase** | [Firebase Console](https://console.firebase.google.com/) |
-| **Gemini AI (Chatbot API)** | [Google AI](https://ai.google.dev/) |
-
----
-
-## ⚡ Setting Up Streamlit
-
-Streamlit is used for AI-based meal planning. Follow these steps to install and run it:
-
-### **1️⃣ Install Streamlit**
-```sh
-pip install streamlit
-```
-
-### **2️⃣ Verify Installation**
-```sh
-streamlit --version
-```
-
-### **3️⃣ Run a Sample App**
-```sh
-streamlit hello
-```
-This will launch a demo in your browser.
-
-### **4️⃣ Run the Custom Streamlit App**
-```sh
-streamlit run app.py
-```
-Replace `app.py` with your script name if different.
+## 📌 How to Use  
+1. **Sign in with Google** (authentication required).  
+2. **Choose a service** (Chatbot, Causes of Poor Nutrition, or Personalized Meal Plan).  
+3. If **not logged in**, you'll be redirected to the **Google login page**.  
+4. After login, access your selected service.  
+5. Use the **AI chatbot** for nutritional advice or get a **personalized meal plan** via **React.js UI** with **Streamlit-powered insights**.  
 
 ---
 
-## 🏗️ Deployment
-
-For deploying on **Vercel, Netlify, or Firebase Hosting**, set environment variables in their respective settings and build the project:
-```sh
-npm run build
-```
-
----
-
-## 🤝 Contributing
-
-Want to improve **InnovNutri-Bite**? Follow these steps:
-1. **Fork** the repo
-2. **Create a branch** (`git checkout -b feature-name`)
-3. **Commit changes** (`git commit -m "Added new feature"`)
-4. **Push to GitHub** (`git push origin feature-name`)
-5. Open a **Pull Request** 🚀
+## 🎯 Future Improvements  
+- **Real-time grocery price integration** to optimize meal costs.  
+- **Bulk order recommendations** based on grocery price inflation predictions.  
+- Expand support to more countries.  
+- Improve AI chatbot with more nutrition-based recommendations.  
+- Mobile app version for easier access.  
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License** – you can freely use and modify it. 😊
+## 💡 Contributing  
+We welcome contributions! Feel free to fork the repo, open issues, or submit pull requests.  
 
 ---
 
-### 📧 Need Help?
-If you have any questions or suggestions, feel free to reach out! 🚀
+## 📞 Contact  
+For questions or suggestions, reach out at [your email or social media].  
 
+---
+
+🔥 **Now correctly includes future improvements for real-time data & bulk orders!**  
+Let me know if you need any more edits. 🚀  
